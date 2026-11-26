@@ -1,11 +1,10 @@
-import React from "react";
+import { Skeleton } from "@/components/ui/skeleton";
 
-const loading = () => {
-  return (
-    <div>
-      <p>loading</p>
-    </div>
-  );
-};
-
-export default loading;
+export default function Loading() {
+    return (
+        <div className="mx-auto grid w-full max-w-6xl gap-4 px-4 py-12 sm:px-6">
+            <Skeleton className="h-8 w-1/2" />
+            <Skeleton className="h-64 w-full rounded-xl" />
+        </div>
+    );
+}

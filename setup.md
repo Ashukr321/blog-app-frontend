@@ -16,7 +16,7 @@ Edit `.env.local` and set your values:
 
 | Variable               | Description          | Default                     |
 | ---------------------- | -------------------- | --------------------------- |
-| `NEXT_PUBLIC_API_URL`  | Backend API base URL | `http://localhost:8000/api` |
+| `NEXT_PUBLIC_API_URL`  | Backend API base URL | `http://localhost:9000/v1`  |
 | `NEXT_PUBLIC_APP_NAME` | Application name     | `MyApp`                     |
 | `NEXT_PUBLIC_APP_URL`  | Frontend URL         | `http://localhost:3000`      |
 

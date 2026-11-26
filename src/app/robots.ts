@@ -5,23 +5,23 @@ import { siteConfig } from "@/utils/site";
 // Disallow paths you don't want search engines to index (admin, API, auth pages, etc.)
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = siteConfig.url;
+    const baseUrl = siteConfig.url;
 
-  return {
-    rules: [
-      {
-        userAgent: "*",
-        allow: "/",
-        disallow: [
-          "/api/",
-          "/dashboard/",
-          "/login",
-          "/register",
-          "/forgot-password",
-          "/reset-password",
+    return {
+        rules: [
+            {
+                userAgent: "*",
+                allow: "/",
+                disallow: [
+                    "/api/",
+                    "/dashboard/",
+                    "/login",
+                    "/register",
+                    "/forgot-password",
+                    "/reset-password",
+                ],
+            },
         ],
-      },
-    ],
-    sitemap: `${baseUrl}/sitemap.xml`,
-  };
+        sitemap: `${baseUrl}/sitemap.xml`,
+    };
 }
